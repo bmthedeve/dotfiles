@@ -61,4 +61,4 @@ compinit
 source <(kubectl completion zsh)
 
 autoload -U +X bashcompinit && bashcompinit
-complete -o nospace -C /opt/homebrew/bin/terraform terraform
+complete -o nospace -C "$(which terraform)" terraform
